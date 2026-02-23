@@ -32,10 +32,10 @@ public class PracticeProblem {
 	String letter2;
 Scanner input = new Scanner(System.in);
 	System.out.print("Input a lowercase letter: ");
-	letter1 = input.nextChar(); 
-	input.nextLine();
-	letter2 = input.nextChar();
-	input.nextLine();
+	letter1 = input.nextLine(); 
+	System.out.print("Input another lowercase letter: ");
+	letter2 = input.nextLine();
+	System.out.println(letter1.compareTo(letter2) < 0);
 	}
 
 	public static void q3() {
@@ -66,18 +66,21 @@ Scanner input = new Scanner(System.in);
 		//Write question 5 code here
 	String word;
 Scanner input = new Scanner(System.in);
+	System.out.print("Input a word: ");
 	word = input.nextLine();
-	System.out.println(word.compareTo("banana") == 0);
+	System.out.println(word.compareTo("banana") != 0);
 	}
 
 	public static void q6() {
 		//Write question 5 code here
 	int integer;
 Scanner input = new Scanner(System.in);
+	System.out.print("Enter an integer: ");
 	integer = input.nextInt();
 	input.nextLine();
 	boolean even = integer%2 == 0;
-	System.out.print(even);
+	System.out.print("The integer " + integer + " is " + even);
+	System.out.println();
 	}
 
 }
